@@ -1,4 +1,4 @@
-##一、简介
+## 一、简介 ##
 使用DirectFB对NUC972的2D图像加速驱动进行封装，可供qt使用或单独建立基于DirectFB的图形应用。
 
 目前移植支持了NUC972的画线、矩形填充和Bitblt块传输功能。
@@ -9,7 +9,7 @@ DirectFB主页：http://directfb.net/
 
 github：https://github.com/Distrotech/DirectFB
 
-##二、使用
+## 二、使用 ##
 1、下载
 
     git clone https://github.com/nuc97xx/directfb
@@ -29,7 +29,7 @@ github：https://github.com/Distrotech/DirectFB
 
 更多信息请参考个人博客：http://blog.csdn.net/jxgz_leo/article/details/70137304
 
-##三、运行
+## 三、运行 ##
 1、设置系统模块路径
 
 	export DFBARGS=module-dir=/mnt/lib/directfb-1.4-5
@@ -40,7 +40,7 @@ github：https://github.com/Distrotech/DirectFB
 
 切换到安装目录下的bin目录下，执行test程序，如dfbtest_fillrect即可看到dfb启动信息
 
-##四、主要事项
+## 四、主要事项 ##
 当DFB使用的system为fb时，必须要满足以下两点要求DFB才会启用2D硬件加速。
 
 1、拿到更多的物理内存。我们知道当使用fb驱动时实际上是映射了一段物理内存到用户空间来进行操作，这里我们需要得到更多的物理内存则需要在fb驱动初始化的时候从系统分配到更多的内存。
