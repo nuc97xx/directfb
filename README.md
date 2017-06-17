@@ -40,7 +40,7 @@ github：https://github.com/Distrotech/DirectFB
 
 切换到安装目录下的bin目录下，执行test程序，如dfbtest_fillrect即可看到dfb启动信息
 
-## 四、主要事项 ##
+## 四、注意事项 ##
 当DFB使用的system为fb时，必须要满足以下两点要求DFB才会启用2D硬件加速。
 
 1、拿到更多的物理内存。我们知道当使用fb驱动时实际上是映射了一段物理内存到用户空间来进行操作，这里我们需要得到更多的物理内存则需要在fb驱动初始化的时候从系统分配到更多的内存。
